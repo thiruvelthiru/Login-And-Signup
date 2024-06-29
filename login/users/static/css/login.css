@@ -1,0 +1,63 @@
+body{background-color:gray;}
+
+.contain{
+  background-color: aquamarine;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid black;
+      
+      border-radius: 10px;
+      box-shadow: 0 3px 10px black;
+      width: 350px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-40%,-30%);
+
+  }
+   .head {
+      border-radius: 10px;
+      box-shadow: 0 3px 10px black;
+      background-color:greenyellow;
+      padding: 10px;
+      width: 330px;
+  
+  }
+  .frm{
+      margin-top: 15px;
+  }
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  form input{
+     
+      padding: 5px;
+      border-radius: 5px;
+  }
+  
+  input[type='text']
+  input[type='password']
+  button{
+     
+      margin: 20px 0;
+      padding:20px;
+      border: 2px solid green;
+     }
+
+  button{
+      border-radius: 60px;
+      box-shadow: 0 3px 10px black;
+      font-size: 18px;
+      background-color: white;
+      color:blue;
+      cursor: pointer;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  button:hover{
+      background-color: darkseagreen;        }
+  a:link{color: blue;
+      text-decoration: none;}
+  a:visited{color:purple;
+          text-decoration: none;}

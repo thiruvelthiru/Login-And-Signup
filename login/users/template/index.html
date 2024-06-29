@@ -1,0 +1,21 @@
+
+{% include "navbar.html" %}
+<html>
+    <head>
+        <title>home</title>
+        {% load static %}
+    </head>
+    <style>
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <body>
+        {% block content %}
+           <h1>home page</h1>
+        {% endblock %} 
+    </body>
+</html>

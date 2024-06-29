@@ -1,0 +1,77 @@
+{% include "header.html"%}
+<html>
+
+<head>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<style>
+    .navbar {
+        width: 100%;
+        background-color: rgb(3, 33, 78);
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        display: flex;
+        word-spacing: 0.5em;
+        margin: auto;
+    }
+    
+    .navbar ul li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0px 20px;
+        color: aliceblue;
+        font-size: 19px;
+        text-decoration: none;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 100%;
+    }
+    
+    .logo li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0px 20px;
+        color: aliceblue;
+        font-size: 19px;
+        text-decoration: none;
+    }
+    
+    .one {
+        padding: 0px 40px;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="$">
+                <li>Logo</li>
+            </a>
+            <a href="#"><img src="{% static 'image/loogo.jpg'%}"></a>
+        </div>
+
+
+        <ul class="one">
+            <a href="{% url 'home'%}">
+                <li><i>Home</i></li>
+            </a>
+            <a href="{% url 'login'%}">
+                <li><i>Login</i></li>
+            </a>
+            <a href="{% url 'register'%}">
+                <li><i>Register</i> </li>
+            </a>
+        </ul>
+    </div>
+    <div class="home">
+        <p></p>
+    </div>
+
+</html>
